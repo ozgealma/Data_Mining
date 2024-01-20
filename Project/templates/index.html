@@ -1,0 +1,67 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <style>
+        .box {
+          border-color: black;
+          border-width: 2px;
+          border-style: solid;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="jumbotron">
+          <h1>Duygu Temelli Restoran Tavsiyesi 🍕 🍔 🍟</h1>
+      </div>
+      <div class="container text-center">
+        <h2 style="margin-bottom: 20px">Lütfen şu anki ruh halinizi seçiniz</h2>
+        <div class="card-deck">
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('happy')">
+            <h1>😀</h1>
+            <h2>Mutlu</h2>
+          </div>
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('laziness')">
+            <h1>😴</h1>
+            <h2>Tembel</h2>
+          </div>
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('sad')">
+            <h1>😔</h1>
+            <h2>Üzgün</h2>
+          </div>
+        </div>
+        <div class="card-deck" style="margin-top: 20px">
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('depression')">
+            <h1>😞</h1>
+            <h2>Depresif</h2>
+          </div>
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('hunger')">
+            <h1>🤤</h1>
+            <h2>Acıkmış</h2>
+          </div>
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('boredom')">
+            <h1>🤔</h1>
+            <h2>Sıkılgan</h2>
+          </div>
+        </div>
+        <div class="card-deck" style="margin-top: 20px">
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('stress')">
+            <h1>😵</h1>
+            <h2>Stresli</h2>
+          </div>
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('cold')">
+            <h1>❄️</h1>
+            <h2>Soğuk Hava</h2>
+          </div>
+          <div class="card" style="padding-top: 15px; padding-bottom: 15px; cursor: pointer;" onclick="find('tv')">
+            <h1>📺</h1>
+            <h2>Televizyon ve sakinlik</h2>
+          </div>
+        </div>
+      </div>
+      <script>
+        function find(val) {
+          window.location.href="/find?mood="+val;
+        }
+      </script>
+    </body>
+</html>
